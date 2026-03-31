@@ -1,0 +1,31 @@
+import { EntitySchema } from "typeorm";
+
+export default new EntitySchema({
+  name: "User3",
+  tableName: "user",
+  columns: {
+    id: { type: Number, primary: true, generated: true },
+    username: { type: String },
+    name: { type: String },
+    token_value: { type: String },
+    password: { type: String },
+    email: { type: String },
+    adr: { type: String },
+    detail_adr: { type: String },
+    contact: { type: String },
+    birth_date: { type: "datetime", nullable: true },
+    phone_number: { type: String },
+    company: { type: String },
+    company_adr: { type: String },
+    company_detail_adr: { type: String },
+    company_contact: { type: String },
+    buyer: { type: String },
+    buy_date: { type: "datetime", nullable: true },
+    marketing_consent: { type: Number },
+    device_type: { type: String },
+    standard_rate: { type: Number },
+    alarm_flag: { type: Number },
+    created_at: { type: "datetime", nullable: true },
+    updated_at: { type: "datetime", nullable: true },
+  },
+}); 
